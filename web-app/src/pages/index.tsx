@@ -5,6 +5,8 @@ import NextLink from 'next/link'
 import { VStack, Heading, Box, LinkOverlay, LinkBox } from '@chakra-ui/layout'
 import { Text, Button } from '@chakra-ui/react'
 import ConnectMetamask from 'components/ConnectMetamask'
+import ETHBalance from 'components/ETHBalance'
+import ETHBalanceSWR from 'components/ETHBalanceSWR'
 
 const Home: NextPage = () => {
   return (
@@ -18,6 +20,20 @@ const Home: NextPage = () => {
       </Heading>
       <VStack>
         <ConnectMetamask />
+
+        <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
+          <Heading my={4} fontSize="xl">
+            ETH Balance
+          </Heading>
+          <ETHBalance />
+        </Box>
+
+        <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
+          <Heading my={4} fontSize="xl">
+            ETH Balance <b>using SWR</b>
+          </Heading>
+          <ETHBalanceSWR />
+        </Box>
 
         <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
           <Heading my={4} fontSize="xl">
