@@ -7,6 +7,9 @@ import { Text, Button } from '@chakra-ui/react'
 import ConnectMetamask from 'components/ConnectMetamask'
 import ETHBalance from 'components/ETHBalance'
 import ETHBalanceSWR from 'components/ETHBalanceSWR'
+import ReadERC20 from 'components/ReadERC20'
+
+const addressContract = '0xB0ebBa360669CF708d9d246490828379F697E442'
 
 const Home: NextPage = () => {
   return (
@@ -33,6 +36,13 @@ const Home: NextPage = () => {
             ETH Balance <b>using SWR</b>
           </Heading>
           <ETHBalanceSWR />
+        </Box>
+
+        <Box my={4} p={4} w="100%" borderWidth="1px" borderRadius="lg">
+          <Heading my={4} fontSize="xl">
+            ClassToken: ERC20 Smart Contract
+          </Heading>
+          <ReadERC20 addressContract={addressContract} />
         </Box>
 
         <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
