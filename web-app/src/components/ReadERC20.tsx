@@ -97,7 +97,7 @@ export default function ReadERC20(props: Props) {
         token totalSupply:{totalSupply} {symbol}
       </Text>
       <Text my={4}>
-        ClassToken in current account:{balance ? parseFloat(formatEther(balance)).toFixed(1) : ' '}{' '}
+        NIT Token in current account:{balance ? parseFloat(formatEther(balance)).toFixed(1) : ' '}{' '}
         {symbol}
       </Text>
     </div>

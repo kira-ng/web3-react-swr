@@ -8,6 +8,7 @@ import ConnectMetamask from 'components/ConnectMetamask'
 import ETHBalance from 'components/ETHBalance'
 import ETHBalanceSWR from 'components/ETHBalanceSWR'
 import ReadERC20 from 'components/ReadERC20'
+import TransferERC20 from 'components/TransferERC20'
 
 const addressContract = '0xB0ebBa360669CF708d9d246490828379F697E442'
 
@@ -40,9 +41,16 @@ const Home: NextPage = () => {
 
         <Box my={4} p={4} w="100%" borderWidth="1px" borderRadius="lg">
           <Heading my={4} fontSize="xl">
-            ClassToken: ERC20 Smart Contract
+            NIT Token: ERC20 Smart Contract
           </Heading>
           <ReadERC20 addressContract={addressContract} />
+        </Box>
+
+        <Box my={4} p={4} w="100%" borderWidth="1px" borderRadius="lg">
+          <Heading my={4} fontSize="xl">
+            Transfer NIT Token - ERC20 token
+          </Heading>
+          <TransferERC20 addressContract={addressContract} />
         </Box>
 
         {/* <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
