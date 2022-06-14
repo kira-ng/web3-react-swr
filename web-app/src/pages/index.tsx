@@ -45,7 +45,7 @@ const Home: NextPage = () => {
           <ReadERC20 addressContract={addressContract} />
         </Box>
 
-        <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
+        {/* <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
           <Heading my={4} fontSize="xl">
             Task 1
           </Heading>
@@ -68,7 +68,7 @@ const Home: NextPage = () => {
               <Text>Read docs of Web3-React V6</Text>
             </LinkOverlay>
           </NextLink>
-        </LinkBox>
+        </LinkBox> */}
       </VStack>
     </>
   )

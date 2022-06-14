@@ -11,11 +11,11 @@ export function Layout(props: Props) {
   return (
     <div>
       <Header />
-      <Container maxW="container.md" py='8'>
+      <Container maxW="container.md" py="8">
         {props.children}
       </Container>
       <Center as="footer" bg={useColorModeValue('gray.100', 'gray.700')} p={6}>
-          <Text fontSize="md">first dapp by W3BCD - 2022</Text>
+        <Text fontSize="md">DApp by Kira Ng - 2022</Text>
       </Center>
     </div>
   )
